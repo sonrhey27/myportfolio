@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-4">
     <div class="work-box">
-        <a href="assets/img/wims.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+        <a href="assets/img/wims.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
         <div class="work-img">
             <img src="assets/img/wims.PNG" alt="" class="img-fluid">
         </div>
@@ -25,9 +25,9 @@
     </div>
     <div class="col-md-4">
     <div class="work-box">
-        <a href="assets/img/gsone.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+        <a href="assets/img/gsone.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
         <div class="work-img">
-            <img src="assets/img/gsone.png" alt="" class="img-fluid">
+            <img src="assets/img/gsone.PNG" alt="" class="img-fluid">
         </div>
         </a>
         <div class="work-content">
@@ -49,9 +49,9 @@
     </div>
     <div class="col-md-4">
     <div class="work-box">
-        <a href="assets/img/tapngo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+        <a href="assets/img/tapngo.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
         <div class="work-img">
-            <img src="assets/img/tapngo.png" alt="" class="img-fluid">
+            <img src="assets/img/tapngo.PNG" alt="" class="img-fluid">
         </div>
         </a>
         <div class="work-content">
@@ -73,9 +73,9 @@
     </div>
     <div class="col-md-4">
     <div class="work-box">
-        <a href="assets/img/yellox.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+        <a href="assets/img/yellox.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
         <div class="work-img">
-            <img src="assets/img/yellox.png" alt="" class="img-fluid">
+            <img src="assets/img/yellox.PNG" alt="" class="img-fluid">
         </div>
         </a>
         <div class="work-content">
@@ -97,9 +97,9 @@
     </div>
     <div class="col-md-4">
     <div class="work-box">
-        <a href="assets/img/yellox-admin.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+        <a href="assets/img/yellox-admin.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
         <div class="work-img">
-            <img src="assets/img/yellox-admin.png" alt="" class="img-fluid">
+            <img src="assets/img/yellox-admin.PNG" alt="" class="img-fluid">
         </div>
         </a>
         <div class="work-content">
@@ -121,9 +121,9 @@
     </div>
     <div class="col-md-4">
     <div class="work-box">
-        <a href="assets/img/claims.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+        <a href="assets/img/claims.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
         <div class="work-img">
-            <img src="assets/img/claims.png" alt="" class="img-fluid">
+            <img src="assets/img/claims.PNG" alt="" class="img-fluid">
         </div>
         </a>
         <div class="work-content">
