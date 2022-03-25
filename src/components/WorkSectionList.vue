@@ -3,7 +3,7 @@
     <div class="work-box">
         <a href="assets/img/wims.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
         <div class="work-img">
-            <img src="assets/img/wims.png" alt="" class="img-fluid">
+            <img src="/assets/img/wims.png" alt="" class="img-fluid">
         </div>
         </a>
         <div class="work-content">
