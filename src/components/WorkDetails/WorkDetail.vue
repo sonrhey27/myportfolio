@@ -20,34 +20,28 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img :src=projectDetails.ProjectIMG alt="">
+                  <img :src=$store.state.project_img alt="">
                 </div>
 
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
-
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: {{ projectDetails.ProjectCategory }}</li>
-                <li><strong>Client</strong>: {{ projectDetails.ProjectClient   }}</li>
-                <li><strong>Project date</strong>: {{ projectDetails.ProjectDate }}</li>
-                <li><strong>Project URL</strong>: <a href="#">{{ projectDetails.ProjectURL }}</a></li>
+                <li><strong>Category</strong>: {{ $store.state.category }}</li>
+                <li><strong>Client</strong>: {{ $store.state.client }}</li>
+                <li><strong>Project date</strong>: {{ $store.state.project_date }}</li>
+                <li><strong>Project URL</strong>: <a href="#">{{ $store.state.project_url }}</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>{{ projectDetails.ProjectTitle }}</h2>
-              <p>
-                {{ projectDetails.ProjectDescription }}
-              </p>
+              <h2>{{ $store.state.project_title }}</h2>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   </LayoutSection>
@@ -61,12 +55,6 @@ export default {
   name: 'WorkDetail',
   components: {
     LayoutSection
-  },
-  props: ["details"],
-  computed: {
-    ...mapGetters([
-      'projectDetails'
-    ])
   }
 }
 </script>

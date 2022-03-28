@@ -1,153 +1,47 @@
 <template>
     <div class="col-md-4">
-    <div class="work-box">
-        <a href="assets/img/wims.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
-        <div class="work-img">
-            <img src="assets/img/wims.PNG" alt="" class="img-fluid">
-        </div>
-        </a>
-        <div class="work-content">
-        <div class="row">
-            <div class="col-sm-8">
-            <h2 class="w-title">Yello Hotel IMS</h2>
-            <div class="w-more">
-                <span class="w-ctegory">Web Development</span> / <span class="w-date">December 2019</span>
+        <div class="work-box">
+            <a :href=work.project_image data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+                <img :src=work.project_image alt="" class="img-fluid">
             </div>
-            </div>
-            <div class="col-sm-4">
-            <div class="w-like">
-                <router-link to="/work"><span class="bi bi-plus-circle"></span></router-link>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="work-box">
-        <a href="assets/img/gsone.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
-        <div class="work-img">
-            <img src="assets/img/gsone.PNG" alt="" class="img-fluid">
-        </div>
-        </a>
-        <div class="work-content">
-        <div class="row">
-            <div class="col-sm-8">
-            <h2 class="w-title">GSOne LRP</h2>
-            <div class="w-more">
-                <span class="w-ctegory">Web Design</span> / <span class="w-date">February 2022</span>
-            </div>
-            </div>
-            <div class="col-sm-4">
-            <div class="w-like">
-                <router-link to="/work"><span class="bi bi-plus-circle"></span></router-link>
+            </a>
+            <div class="work-content">
+            <div class="row">
+                <div class="col-sm-8">
+                <h2 class="w-title">{{ work.project_title }}</h2>
+                <div class="w-more">
+                    <span class="w-ctegory">{{ work.project_type }}</span> / <span class="w-date">{{ work.project_date }}</span>
+                </div>
+                </div>
+                <div class="col-sm-4">
+                <div class="w-like">
+                    <button class="btn btn-link btn-lg" @click="viewDetails"><span class="bi bi-plus-circle"></span></button>
+                </div>
+                </div>
             </div>
             </div>
         </div>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="work-box">
-        <a href="assets/img/tapngo.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
-        <div class="work-img">
-            <img src="assets/img/tapngo.PNG" alt="" class="img-fluid">
-        </div>
-        </a>
-        <div class="work-content">
-        <div class="row">
-            <div class="col-sm-8">
-            <h2 class="w-title">Tap n Go Cargo Delivery</h2>
-            <div class="w-more">
-                <span class="w-ctegory">Mobile Development</span> / <span class="w-date">October 2021</span>
-            </div>
-            </div>
-            <div class="col-sm-4">
-            <div class="w-like">
-                <router-link to="/work"><span class="bi bi-plus-circle"></span></router-link>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="work-box">
-        <a href="assets/img/yellox.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
-        <div class="work-img">
-            <img src="assets/img/yellox.PNG" alt="" class="img-fluid">
-        </div>
-        </a>
-        <div class="work-content">
-        <div class="row">
-            <div class="col-sm-8">
-            <h2 class="w-title">Yello X Delivery</h2>
-            <div class="w-more">
-                <span class="w-ctegory">Mobile Development</span> / <span class="w-date">August 2021</span>
-            </div>
-            </div>
-            <div class="col-sm-4">
-            <div class="w-like">
-                <router-link to="/work"><span class="bi bi-plus-circle"></span></router-link>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="work-box">
-        <a href="assets/img/yellox-admin.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
-        <div class="work-img">
-            <img src="assets/img/yellox-admin.PNG" alt="" class="img-fluid">
-        </div>
-        </a>
-        <div class="work-content">
-        <div class="row">
-            <div class="col-sm-8">
-            <h2 class="w-title">Yello X Admin</h2>
-            <div class="w-more">
-                <span class="w-ctegory">Web Development</span> / <span class="w-date">December 2020</span>
-            </div>
-            </div>
-            <div class="col-sm-4">
-            <div class="w-like">
-                <router-link to="/work"><span class="bi bi-plus-circle"></span></router-link>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-    <div class="work-box">
-        <a href="assets/img/claims.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox">
-        <div class="work-img">
-            <img src="assets/img/claims.PNG" alt="" class="img-fluid">
-        </div>
-        </a>
-        <div class="work-content">
-        <div class="row">
-            <div class="col-sm-8">
-            <h2 class="w-title">Claims System</h2>
-            <div class="w-more">
-                <span class="w-ctegory">Web Development</span> / <span class="w-date">December 2020</span>
-            </div>
-            </div>
-            <div class="col-sm-4">
-            <div class="w-like">
-                <router-link to="/work"><span class="bi bi-plus-circle"></span></router-link>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
     </div>
 </template>
 
 <script>
 export default {
-name: 'WorkSectionList'
+name: 'WorkSectionList',
+props: ['work'],
+methods: {
+    viewDetails(){
+        this.$store.commit('changeCategory', this.work.project_type)
+        this.$store.commit('changeClient', this.work.client)
+        this.$store.commit('changeDate', this.work.project_date)
+        this.$store.commit('changeUrl', '#')
+        this.$store.commit('changeTitle', this.work.project_title)
+        this.$store.commit('changeImg', this.work.project_image)
+        this.$router.push({
+            path : '/work'
+        })
+    }
+}
 }
 </script>
 

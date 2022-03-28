@@ -2,17 +2,12 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    projectDetails: 
-      {
-      "ProjectCategory" : "Project 1",
-      "ProjectClient" : "Client 1",
-      "ProjectDate" : "12/12/2020",
-      "ProjectURL" : "url.com",
-      "ProjectIMG" : "assets/img/wims.png",
-      "ProjectTitle" : "Project Title",
-      "ProjectDescription" : "ProjectDescription"
-      }
-    
+    category: "test",
+    client: "",
+    project_date: "",
+    project_url: "",
+    project_title: "",
+    project_img : ""
   },
   getters: {
     projectDetails: state => {
@@ -20,22 +15,29 @@ export default createStore({
     }
   },
   mutations: {
-    setProjectDetails(state, value){
-      state.projectDetails = {
-        "ProjectCategory" : value,
-        "ProjectClient" : value,
-        "ProjectClient" : value,
-        "ProjectURL" : value,
-        "ProjectIMG" : value,
-        "ProjectTitle" : value,
-        "ProjectDescription" : value
-      }
+    changeCategory(state, value){
+      state.category = value
+    },
+    changeClient(state, value){
+      state.client = value
+    },
+    changeDate(state, value){
+      state.project_date = value
+    },
+    changeUrl(state, value){
+      state.project_url = value
+    },
+    changeTitle(state, value){
+      state.project_title = value
+    },
+    changeImg(state, value){
+      state.project_img = value
     }
   },
   actions: {
-    getProjectDetails(context, item){
-      context.commit('setProjectDetails', item)
-    }
+    // getProjectDetails(context, item){
+    //   context.commit('setProjectDetails', item)
+    // }
   },
   modules: {
   }
